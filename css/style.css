@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+/*cambiar en cuanto aprendamos JS*/
+.RedesFooter{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    background: rgb(18, 18, 18);
+    padding: 30px 30px;
+}
+footer{
+    background: rgb(18, 18, 18);
+    display: flex;
+    text-align: center;
+    color: #ffffff;
+}
+.logo-footer{
+    width: 100%;
+}
+.columna-footer{
+    width: 40%;
+}
+.iconos-footer{
+    font-size: 30px;
+}
