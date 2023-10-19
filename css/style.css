@@ -1,37 +1,57 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@font-face {
+  font-family: "MonoCraft";
+  src: url("../Monocraft.otf") format("truetype");
 }
-body{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-main{
-    flex-grow: 1;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex-grow: 1;
+}
+/*agregar la fuente nueva al nav: font-family: 'Poppins', sans-serif;*/
+nav {
+  background: rgb(18, 18, 18);
+  padding: 30px 30px;
+}
+footer {
+  padding: 30px 10px;
+  background: rgb(18, 18, 18);
+  display: flex;
+  text-align: center;
+  color: #ffffff;
 }
 /*cambiar en cuanto aprendamos JS*/
-.RedesFooter{
-    list-style: none;
-    display: flex;
-    justify-content: center;
+.RedesFooter {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
-nav{
-    background: rgb(18, 18, 18);
-    padding: 30px 30px;
+footer div h3 {
+  margin-bottom: 10px;
+  font-family: "MonoCraft", sans-serif;
 }
-footer{
-    background: rgb(18, 18, 18);
-    display: flex;
-    text-align: center;
-    color: #ffffff;
+.logo-footer {
+  width: 50%;
 }
-.logo-footer{
-    width: 100%;
+.columna-footer {
+  width: 40%;
 }
-.columna-footer{
-    width: 40%;
+.iconos-footer {
+  color: rgb(255, 255, 255);
+  margin: 0px 5px 0px 5px;
+  font-size: 28px;
 }
-.iconos-footer{
-    font-size: 30px;
+.link-a {
+  margin-top: 8px;
+}
+.link-a a {
+  color: white;
+  text-decoration: none;
 }
