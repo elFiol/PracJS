@@ -2,7 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @font-face {
   font-family: "MonoCraft";
-  src: url("../Monocraft.otf") format("truetype");
+  src: url("../fuentes/Monocraft.otf") format("truetype");
+}@font-face {
+  font-family: "Determination";
+  src: url("../fuentes/DeterminationSansWebRegular-369X.ttf") format("truetype");
 }
 * {
   margin: 0px;
@@ -15,11 +18,35 @@ body {
 }
 main {
   flex-grow: 1;
+  padding-top: 90px;
 }
-/*agregar la fuente nueva al nav: font-family: 'Poppins', sans-serif;*/
 nav {
   background: rgb(18, 18, 18);
-  padding: 30px 30px;
+  padding: 20px 5%;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 90%;
+}
+.tituloNav{
+  text-decoration: none;
+  color: blueviolet;
+  font-size: 25px;
+  transition: font-size 0.6s;
+}
+.tituloNav:hover{
+  font-size: 29px;
+}
+nav div a{
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0px 10px;
+  transition: opacity 0.3;
+}
+nav div a:hover{
+  opacity: 0.8;
 }
 footer {
   padding-top: 20px;
