@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @font-face {
   font-family: "MonoCraft";
   src: url("../Monocraft.otf") format("truetype");
@@ -38,7 +39,11 @@ footer div h3 {
   font-family: "MonoCraft", sans-serif;
 }
 .logo-footer {
-  width: 50%;
+  width: 40%;
+  transition: transform 0.3s;
+}
+.logo-footer:hover {
+  transform: scale(1.1);
 }
 .columna-footer {
   width: 40%;
@@ -46,6 +51,7 @@ footer div h3 {
 .iconos-footer {
   color: rgb(255, 255, 255);
   margin: 0px 5px 0px 5px;
+  transition: font-size 0.3s;
   font-size: 28px;
 }
 .link-a {
@@ -54,4 +60,11 @@ footer div h3 {
 .link-a a {
   color: white;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.iconos-footer:hover {
+  color: rgb(255, 255, 255);
+  margin: 0px 5px 0px 5px;
+  font-size: 32px;
 }
