@@ -19,7 +19,6 @@ body {
 }
 main {
   flex-grow: 1;
-  padding-top: 90px;
 }
 nav {
   background: rgb(18, 18, 18);
@@ -28,7 +27,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   width: 90%;
 }
 .tituloNav {
@@ -132,8 +130,5 @@ footer div h3 {
     margin-top: 15px;
     margin-right: 0px;
     font-size: 13px;
-  }
-  main {
-    padding-top: 210px;
   }
 }
