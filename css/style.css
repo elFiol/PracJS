@@ -10,7 +10,8 @@
 }
 @font-face {
   font-family: "Sans";
-  src: url("../fuentes/pixel-comic-sans-undertale-sans-font.ttf") format("truetype");
+  src: url("../fuentes/pixel-comic-sans-undertale-sans-font.ttf")
+    format("truetype");
 }
 * {
   margin: 0px;
@@ -52,7 +53,7 @@ nav div a {
 nav div a:hover {
   opacity: 0.8;
 }
-.activo{
+.activo {
   color: #ffffff;
 }
 footer {
@@ -112,26 +113,27 @@ footer div h3 {
   margin: 0px 5px 0px 5px;
   font-size: 32px;
 }
-.texto-real{
+.texto-real {
   margin-left: 5px;
 }
-.sub-comentario-sans{
+.sub-comentario-sans {
   display: flex;
   flex-grow: 1;
   margin: 20px 20px;
 }
-.sans-moment{
+.sans-moment {
   margin: 20px 3%;
 }
-.sans-img{
-  width: 30%;
+.sans-img {
+  width: 20%;
+  height: 20%;
 }
-.comentario-sans{
+.comentario-sans {
   display: flex;
   color: #ffffff;
   background: #000000;
   border: 10px #ffffff solid;
-  font-family: 'sans',sans-serif;
+  font-family: "sans", sans-serif;
   padding: 10px 2%;
   font-size: 3em;
 }
@@ -140,6 +142,16 @@ footer div h3 {
 }
 /* dispositivos md */
 @media all and (min-width: 768px) and (max-width: 991px) {
+  .comentario-sans {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+  }
+  .sans-img {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 /* dispositivos sm */
@@ -158,13 +170,14 @@ footer div h3 {
     margin-right: 0px;
     font-size: 13px;
   }
-  .comentario-sans{
+  .comentario-sans {
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 1em;
   }
-  .sans-img{
+  .sans-img {
     width: 50%;
+    height: 50%;
   }
 }
