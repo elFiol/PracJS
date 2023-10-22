@@ -8,6 +8,11 @@
   font-family: "Determination";
   src: url("../fuentes/DeterminationSansWebRegular-369X.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Sans";
+  src: url("../fuentes/pixel-comic-sans-undertale-sans-font.ttf")
+    format("truetype");
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -19,6 +24,7 @@ body {
 }
 main {
   flex-grow: 1;
+  background: rgb(46, 44, 44);
 }
 nav {
   background: rgb(18, 18, 18);
@@ -47,7 +53,7 @@ nav div a {
 nav div a:hover {
   opacity: 0.8;
 }
-.activo{
+.activo {
   color: #ffffff;
 }
 footer {
@@ -107,12 +113,45 @@ footer div h3 {
   margin: 0px 5px 0px 5px;
   font-size: 32px;
 }
-
+.texto-real {
+  margin-left: 5px;
+}
+.sub-comentario-sans {
+  display: flex;
+  flex-grow: 1;
+  margin: 20px 20px;
+}
+.sans-moment {
+  margin: 20px 3%;
+}
+.sans-img {
+  width: 20%;
+  height: 20%;
+}
+.comentario-sans {
+  display: flex;
+  color: #ffffff;
+  background: #000000;
+  border: 10px #ffffff solid;
+  font-family: "sans", sans-serif;
+  padding: 10px 2%;
+  font-size: 3em;
+}
 /* dispositivos grandes lg */
 @media all and (min-width: 992px) {
 }
 /* dispositivos md */
 @media all and (min-width: 768px) and (max-width: 991px) {
+  .comentario-sans {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+  }
+  .sans-img {
+    width: 30%;
+    height: 30%;
+  }
 }
 
 /* dispositivos sm */
@@ -130,5 +169,15 @@ footer div h3 {
     margin-top: 15px;
     margin-right: 0px;
     font-size: 13px;
+  }
+  .comentario-sans {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+  }
+  .sans-img {
+    width: 50%;
+    height: 50%;
   }
 }
